@@ -1,0 +1,31 @@
+<div style="display: grid;justify-content: center;width: 600px;">
+    <!-- <p style="font-weight: bold;">Left Component</p> -->
+<mat-card appearance="outlined">
+    <mat-card-header>
+        <mat-card-title >BS Left Component</mat-card-title>
+      </mat-card-header>
+    <mat-card-content>
+        <div style="height: 100px;width: 500px;">
+            <mat-divider style="margin: 10px 0px;"></mat-divider>
+            <input style="height: 30px;" type="text" #name1/>
+            <button style="margin-left: 10px;border-radius: 5px;" mat-flat-button (click)="passToRightComponent(name1)">To Right Component</button>
+            <div style="font-weight: 590;">Data from right component : </div><div>{{uname}}</div>
+        </div>
+    </mat-card-content>
+  </mat-card>
+  <br>
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Through Service</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div style="height: 150px;width: 500px;">
+            <mat-divider style="margin: 10px 0px;"></mat-divider>
+            <input style="height: 30px;" type="text" #name2/>
+            <button style="margin-left: 10px;border-radius: 5px;" mat-flat-button (click)="passToService(name2)">To Service</button>
+            <div style="font-weight: 590;">Data from service : </div><div>{{unameToService}}</div>
+        </div>
+    </mat-card-content>
+  </mat-card>
+  <br>
+</div>
